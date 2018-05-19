@@ -9,9 +9,9 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: Setup Dependencies
-					command: |
-						npm install
-						npm run build-semantic
+          command: |
+            npm install
+            npm run build-semantic
       - run:
           name: Setup Code Climate test-reporter
           command: |
